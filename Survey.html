@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+        <h1 id="title" class="text-center">Cat Survey Form</h1>
+        <p id="description" class="description text-center">
+          You saw a cat today ? Have some questions for you !
+        </p>
+      </header>
+    <form id="survey-form">
+      <fieldset>
+        <div class="container">
+            
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number"
+                  >Age<span class="clue">(optional)</span></label
+                >
+                <input
+                  type="number"
+                  name="age"
+                  id="number"
+                  min="10"
+                  max="99"
+                  class="form-control"
+                  placeholder="Enter your age"
+                />
+              </div>
+      <fieldset>
+        <label for="myDropdown">Do you have a cat at home? </label>
+         <select id="dropdown" name="">
+            <option disabled selected value>Select answer</option>
+            <option value="apple">Yes</option>
+            <option value="banana">No</option>
+            <option value="orange">It's complicated</option>
+    </select>
+      </fieldset>
+      <fieldset>
+        <legend>Where did you see the cat?</legend>
+        <br><label><input id="indoor" type="radio" name="where" value="indoor" checked>Inside the house</label></br>
+        <br><label><input id="outdoor" type="radio" name="where" value="outdoor">In the street</label></br>
+        <br><label><input id="garden" type="radio" name="where" value="garden">In the garden</label></br>
+        <br><label><input id="school" type="radio" name="where" value="school">In the school</label></br>
+        <br><label><input id="other" type="radio" name="where" value="other">Other</label></br>
+      </fieldset> 
+      <fieldset>
+        <div class="form-group">
+            <p>
+              What color was the cat that you saw ??
+              <span class="clue">(Check all that apply)</span>
+            </p>
+  
+            <br><label
+              ><input
+                name="prefer"
+                value="white"
+                type="checkbox"
+                class="input-checkbox"
+              />White</label
+            >
+            <br><label>
+              <input
+                name="prefer"
+                value="black"
+                type="checkbox"
+                class="input-checkbox"
+              />Black</label
+            ></br>
+            <br><label>
+              <input
+                name="prefer"
+                value="brown"
+                type="checkbox"
+                class="input-checkbox"
+              />Brown</label
+            ></br>
+            <br><label
+              ><input
+                name="prefer"
+                value="orange"
+                type="checkbox"
+                class="input-checkbox"
+              />Orange</label
+            ></br>
+            <br><label
+              ><input
+                name="prefer"
+                value="grey"
+                type="checkbox"
+                class="input-checkbox"
+              />Grey</label
+            ></br>
+            <br><label
+              ><input
+                name="prefer"
+                value="other"
+                type="checkbox"
+                class="input-checkbox"
+              />Other</label></br>
+          </div>
+      </fieldset>
+      <fieldset>
+        <div class="form-group">
+            <p>Do you have any particular description for this cat?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your description here..."
+            ></textarea>
+          </div>
+  
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      </fieldset>
+  </body>
